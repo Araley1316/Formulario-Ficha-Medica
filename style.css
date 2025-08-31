@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f1fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f5ff;
+    border-radius: 10px;
+}
+
+/* Título centrado y en mayúsculas */
+h1 {
+    text-align: center;
+    color: #4b0082;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/*  Etiquetas */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*  Inputs y textarea */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+button {
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 10px 6px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #360060;
+}
+
+/* Contenedor de botones */
+.botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Sección Buscar por Apellido */
+.buscar-apellido {
+    max-width: 900px;
+    margin: 50px auto 0 auto;
+    background-color: #f9f5ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Título del buscador alineado a la izquierda */
+.buscar-apellido h2 {
+    font-size: 16px;
+    color: #4b0082;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Campo de entrada alineado con el contenedor */
+.buscar-apellido input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botón del buscador centrado */
+.buscar-apellido button {
+    display: block;
+    margin: 0 auto;
+}
