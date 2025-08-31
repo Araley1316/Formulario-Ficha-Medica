@@ -117,6 +117,10 @@ function cerrar() {
     }
   }
 }
+window.onload = function () {
+  document.getElementById("nombres").addEventListener("focus", validarRut);
+};
+
 
 
 
