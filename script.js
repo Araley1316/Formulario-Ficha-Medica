@@ -1,5 +1,6 @@
 function guardar() {
     const rut = document.getElementById("rut").value.trim();
+    if (!validarRut()) return;
     const nombres = document.getElementById("nombres").value.trim();
     const apellidos = document.getElementById("apellidos").value.trim();
     const direccion = document.getElementById("direccion").value.trim();
@@ -14,7 +15,17 @@ function guardar() {
         alert("Por favor, complete los campos obligatorios.");
         return;
     }
+    function validarRut() {
+    const rutInput = document.getElementById("rut");
+    const rut = rutInput.value;
 
+    if (rut.includes(".") || rut.includes("-")) {
+        alert("El RUT no debe contener puntos ni guión.");
+        rutInput.focus();
+        return false;
+    }
+    return true;
+}
     const nuevoRegistro = {
         rut,
         nombres,
@@ -106,5 +117,6 @@ function cerrar() {
     }
   }
 }
+
 
 
