@@ -95,9 +95,16 @@ function limpiar() {
 }
 
 function cerrar() {
-    const confirmar = confirm("¿Desea cerrar el formulario?");
-    if (confirmar) {
-        window.close(); 
+  const confirmar = confirm("¿Desea cerrar el formulario?");
+  if (confirmar) {
+    if (window.opener != null) {
+      // La ventana fue abierta con window.open()
+      window.close();
+    } else {
+      // Fue abierta directamente (no se puede cerrar), redirige a una página en blanco
+      window.location.href = "about:blank";
     }
+  }
 }
+
 
